@@ -1,0 +1,205 @@
+body .container .inputCounter .div:hover::before {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body .container .inputCounter .H_M_S, body .container .counter, body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Start Container */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Container */
+/* Start Display None */
+.display-none {
+  display: none;
+}
+
+/* End Display None */
+/* Start Components */
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -3px;
+}
+.special-heading + p {
+  color: #797979;
+  margin-top: -30px;
+  font-size: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+    font-size: 16px;
+  }
+}
+
+/* End Components */
+/* End Global Rules */
+body {
+  background-color: black;
+}
+body .container {
+  padding-top: 200px;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .counter {
+  width: 100%;
+}
+body .container .counter div {
+  background-color: white;
+  color: #03a9f4;
+  display: flex;
+  border: 1px solid rgb(187, 185, 181);
+  padding: 10px;
+}
+body .container .inputCounter {
+  width: 100%;
+}
+body .container .inputCounter input {
+  background-color: white;
+  color: black;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  position: relative;
+}
+body .container .inputCounter input:focus {
+  box-shadow: 0px 0px 15px 5px #03a9f4;
+}
+body .container .inputCounter .div:hover {
+  position: relative;
+}
+body .container .inputCounter .div:hover::before {
+  content: "";
+  background-color: gray;
+  color: white;
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  position: absolute;
+  left: 5px;
+  top: 100%;
+  z-index: 1000;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+body .container .inputCounter .div:hover::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: calc(100% - 20px);
+  z-index: 1000;
+  border: 10px solid;
+  border-color: transparent transparent gray transparent;
+}
+body .container .inputCounter .div:hover:first-of-type::before {
+  content: "Write The Year";
+}
+body .container .inputCounter .div:hover:nth-child(2)::before {
+  content: "Write The Month";
+}
+body .container .inputCounter .div:hover:nth-child(3)::before {
+  content: "Write The Day";
+}
+body .container .inputCounter .div:hover:nth-child(4)::before {
+  content: "Write The Hours";
+}
+body .container .inputCounter .div:hover:nth-child(5)::before {
+  content: "Write The Minutes";
+}
+body .container .inputCounter .div:hover:last-of-type::before {
+  content: "Write The Seconds";
+}
+body .container .inputCounter .H_M_S {
+  gap: 10px;
+}
+body .container .inputCounter .H_M_S input {
+  flex: 1;
+}
+body .container .inputCounter button {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 10px 40px;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+body .container .inputCounter button:hover {
+  background-color: rgb(47, 198, 221);
+  box-shadow: 0px 0px 15px 5px #03a9f4;
+}/*# sourceMappingURL=homepage.css.map */
